@@ -1,0 +1,11 @@
+Executable = /usr/bin/printenv
+Universe = vanilla
+Output = simple.job.$(cluster).$(process).out
+Error = simple.job.$(cluster).$(process).err
+Log = simple.job.$(cluster).$(process).log
+request_cpus = 1
+# 2 MB
+request_memory = 2
+# use the ENV that is provided
+getenv = true
+queue
