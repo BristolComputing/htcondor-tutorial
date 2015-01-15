@@ -1,0 +1,17 @@
+Executable = job.sh
+Universe = vanilla
+Output = script.job.$(cluster).$(process).out
+Error = script.job.$(cluster).$(process).err
+Log = script.job.$(cluster).$(process).log
+arguments = --process $(process)
+
+should_transfer_files = YES
+when_to_transfer_output = ON_EXIT_OR_EVICT
+
+request_cpus = 1
+request_memory=2
+
+# use the ENV that is provided
+getenv = true
+
+queue 2
