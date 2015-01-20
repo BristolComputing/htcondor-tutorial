@@ -7,5 +7,5 @@ request_cpus = 1
 # 2 MB
 request_memory = 2
 # use the ENV that is provided
-getenv = true
+# getenv = true
 queue
